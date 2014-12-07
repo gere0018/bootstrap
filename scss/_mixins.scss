@@ -1,0 +1,19 @@
+@mixin font-title{
+        font-family: "Nova Mono", monospace;
+        font-size: 1.6rem;
+        text-align: center;
+
+    }
+ @mixin font-text{
+        font-size: 1rem;
+        font-family: "Nova Slim", sans-serif;
+
+    }
+ @mixin images{
+    @media screen and (min-width:970px) {
+     img[data-src-970px] {
+     content: attr(data-src-970px, 'images/quidditch-pitch.jpg');
+      }
+
+      }
+ }

@@ -1,0 +1,77 @@
+.jumbotron {
+  background-color: #ffffcc;
+  padding: 0px;
+  margin: 0px; }
+
+img {
+  padding: 0px; }
+
+.navbar .navbar-inner {
+  padding: 0; }
+
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%; }
+
+body {
+  background-color: #c2e085; }
+
+.container {
+  background-color: #ffffcc; }
+
+.masthead {
+  background-color: #99cc33; }
+
+.navbar {
+  background-color: #cccc33; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #c2e085; }
+
+h1 {
+  text-align: center; }
+
+footer {
+  background-color: #99cc33;
+  padding: 1rem; }
+
+footer p {
+  text-align: center;
+  padding-top: 0.5rem; }
+
+.navbar .nav li {
+  display: table-cell;
+  width: 25%;
+  float: none; }
+
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+
+.navbar .nav li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px; }
+
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0; }
+
+carousel {
+  height: 300px;
+  margin-bottom: 60px; }
+
+.carousel {
+  position: relative; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+user agent stylesheetdiv {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */
