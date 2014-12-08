@@ -1,14 +1,29 @@
 @mixin font-title{
-        font-family: "Nova Mono", monospace;
-        font-size: 1.6rem;
-        text-align: center;
-
+      text-align: center;
+      font-family: 'Ruge Boogie', cursive;
+      font-size: 4.5rem;
     }
  @mixin font-text{
-        font-size: 1rem;
-        font-family: "Nova Slim", sans-serif;
-
+     font-family: 'Cookie', cursive;
+     font-size: 2rem;
     }
+@mixin font-footer{
+      text-align: center;
+      font-family: 'Ruge Boogie', cursive;
+      font-size: 2.5rem;
+    }
+
+ @mixin font-subtitle{
+    font-family: 'Rochester', cursive;
+}
+@mixin font-nav{
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: center;
+    color: $blue;
+    font-family: 'Rochester', cursive;
+}
+
  @mixin images{
     @media screen and (min-width:970px) {
      img[data-src-970px] {

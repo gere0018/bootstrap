@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link href='http://fonts.googleapis.com/css?family=Ruge+Boogie|Cookie|Rochester' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/respond.min.js"></script>
@@ -14,20 +15,96 @@
   <div class='container'>
      <!-- Navbar
     ================================================== -->
-   <div class="masthead">
+<div class= "masthead">
       <h1>The Potters</h1>
-      <div class="navbar">
-        <div class="navbar-inner">
-            <ul class="nav">
-              <li ><a href="#home">Home</a></li>
-              <li class="active"><a href="#standings">Standings</a></li>
-              <li ><a href="#locations">Locations</a></li>
-              <li class="active"><a href="#signUp">Sign up</a></li>
-             </ul>
-          </div>
+      <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+       <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
         </div>
-    </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html"><span class='glyphicon glyphicon-home'></span> Home</a></li>
+          <li><a href="standings.html"><span class='glyphicon glyphicon-eye-open'></span> Standings</a></li>
+          <li><a href="locations.html"><span class='glyphicon glyphicon-map-marker'></span> Locations</a></li>
+          <li class="active"><a href="signUp.html"><span class='glyphicon glyphicon-pencil'></span> Sign up</a></li>
+        </ul>
 
+      </div>
+    </div>
+</nav>
+</div>
+
+      <!--
+     sign up form
+    ==================================================
+--><section>
+      <div>
+          <h3>Join our team and explore the thrill of flying a broomstick</h3>
+          <p>To be part of our team there is a cost of 5 million dollars per season. Be one of the privileged few and get transformed into a "Potter". Fill your information below and <strong id='strong'>join us now</strong>.</p>
+      </div>
+
+<form role="form">
+ <div class='row col-xs-12 col-md-6 col-lg-4'>
+  <div class="form-group">
+    <label for=name>Name</label>
+    <input class="form-control" id=name name=name type=text placeholder="First and last name" required autofocus />
+  </div>
+  <div class="form-group">
+    <label for=email>Email</label>
+    <input class="form-control" id=email name=email type=email placeholder="example@domain.com" required />
+  </div>
+  <div class="form-group">
+    <label for=phone>Phone</label>
+    <input class="form-control" id=phone name=phone type=tel  required />
+  </div>
+</div>
+<div class='row col-xs-12 col-md-6 col-lg-4'>
+  <div class="form-group">
+    <label for=address>Street Address</label>
+    <input  class="form-control" id=address name=address type=text required />
+  </div>
+  <div class="form-group">
+    <label for=city>City</label>
+    <input class="form-control" id=city name=city type=text required />
+  </div>
+  <div class="form-group">
+    <label for=postcode>Postal Code</label>
+    <input class="form-control" id=postcode name=postcode type=text required />
+  </div>
+</div>
+<div class='row col-xs-12  col-md-6 col-lg-4'>
+  <div class="form-group">
+    <label for="card-type">Card Type</label>
+    <select class="form-control" name="card-type" id="card-type">
+                <option value="1">Visa</option>
+                <option value="2">AmEx</option>
+                <option value="3">Mastercard</option>
+            </select>
+  </div>
+  <div class="form-group">
+    <label for=cardnumber>Card Number</label>
+    <input class="form-control" id=cardnumber name=cardnumber type=password required />
+  </div>
+  <div class="form-group">
+    <label for=secure>Security Code</label>
+    <input class="form-control" id=secure name=secure type=password required />
+  </div>
+  <div class="form-group">
+    <label for=namecard>Name on Card</label>
+    <input class="form-control" id=namecard name=namecard type=text  required />
+  </div>
+  <div class="form-group">
+</div>
+    <button type="submit" class="btn btn-primary">submit</button>
+ </div>
+</form>
+</section>
 
 
 

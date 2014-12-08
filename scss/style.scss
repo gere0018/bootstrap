@@ -1,20 +1,47 @@
 
 @import "variables";
 @import "mixins";
+
+//Fonts
+*{
+    h1{
+    @include font-title;
+  }
+    h2{
+     @include font-nav;
+     text-align:left;
+    }
+    h3,h4{
+    @include font-subtitle;
+    }
+    p{
+     @include font-text;
+    }
+}
+#strong{
+    color:orange;
+    text-transform: capitalize;
+}
+
+
 .jumbotron{
   background-color: $container;
   padding: 0px;
-    margin: 0px;
-}
-img{
+  margin: 0px;
+
+ img{
   padding: 0px;
+ }
 }
 
+
+
 .navbar .navbar-inner {
-        padding: 0;
+    padding: 0px;
+    margin: 0px;
       }
       .navbar .nav {
-        margin: 0;
+        margin: 0px;
         display: table;
         width: 100%;
       }
@@ -23,6 +50,9 @@ background-color:$bodyColor;
 }
 .container{
 background-color: $container;
+//   @media (min-width: 1200px) {
+//        width:1390px;
+//    }
 }
 .masthead{
     background-color: $nav;
@@ -33,16 +63,15 @@ background-color: $container;
 .nav>li>a:hover, .nav>li>a:focus{
   background-color: $bodyColor;
 }
- h1{
-    text-align: center;
-  }
+
  footer{
     background-color: $nav;
     padding: 1rem;
+     clear:both;
  }
 footer p{
-    text-align: center;
-    padding-top: 0.5rem;
+    @include font-footer;
+     padding-top: 0.5rem;
 }
       .navbar .nav li {
         display: table-cell;
@@ -50,8 +79,7 @@ footer p{
         float: none;
       }
       .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
+        @include font-nav;
         border-left: 1px solid rgba(255,255,255,.75);
         border-right: 1px solid rgba(0,0,0,.1);
       }
@@ -64,21 +92,20 @@ footer p{
         border-radius: 0 3px 3px 0;
       }
 
-//carousel
-//-----------------------------------------------------------------
-carousel {
-height: 300px;
-margin-bottom: 60px;
+// <!-- standings
+//  ================================================== -->
+//tables
+.pool-name th{
+    background-color: $blue;
 }
-.carousel {
-position: relative;
+// <!-- Locations
+//  ================================================== -->
+//ul
+.locations.row{
+    padding: inherit;
 }
-* {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-user agent stylesheetdiv {
-display: block;
-}
+.locations.row li{
+    background-color: $blue;
+    list-style-type: none;
 
+}

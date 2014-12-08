@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link href='http://fonts.googleapis.com/css?family=Ruge+Boogie|Cookie|Rochester' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/respond.min.js"></script>
@@ -11,28 +12,308 @@
 </head>
 
 <body>
-  <div class='container'>
+    <div class='container'>
      <!-- Navbar
     ================================================== -->
-   <div class="masthead">
+   <div class= "masthead">
       <h1>The Potters</h1>
       <div class="navbar">
         <div class="navbar-inner">
             <ul class="nav">
-              <li ><a href="#home">Home</a></li>
-              <li class="active"><a href="#standings">Standings</a></li>
-              <li><a href="#locations">Locations</a></li>
-              <li><a href="#signUp">Sign up</a></li>
+              <li><a href="home.html"><span class='glyphicon glyphicon-home'></span> Home</a></li>
+              <li class="active"><a href="standings.html"><span class='glyphicon glyphicon-eye-open'></span> Standings</a></li>
+              <li><a href="locations.html"><span class='glyphicon glyphicon-map-marker'></span> Locations</a></li>
+              <li><a href="signUp.html"><span class='glyphicon glyphicon-pencil'></span> Sign up</a></li>
              </ul>
           </div>
         </div>
     </div>
 
+      <!-- standings table charts
+    ================================================== -->
+<div class='row'>
+ <div class='tables col-xs-12 col-sm-12 col-md-6'>
+    <table class='table table-responsive table-hover table-striped table-bordered'>
+        <tbody>
+            <tr class="pool-name">
+              <th>Division 1</th>
+              <th>Nick name</th>
+              <th>W-L</th>
+              <th>Pts For</th><th>Pts Agst</th>
+              <th>Adj Goal Diff</th>
+              <th>Snatch %</th>
+              <th>Rank</th>
+            </tr>
+            <tr>
+              <td id="pool_team_name">Texas State University - San Marcos</td>
+              <td id="pool_team_abbreviation">TXST</td>
+              <td>3-1</td>
+              <td>510</td>
+              <td>230</td>
+              <td>210</td>
+              <td>60</td>
+              <td>1</td>
+           </tr>
+            <tr>
+              <td id="pool_team_name">Crimson Fliers</td>
+              <td id="pool_team_abbreviation">CF</td>
+              <td>3-1</td>
+              <td>360</td>
+              <td>270</td>
+              <td>90</td>
+              <td>75</td>
+              <td>2</td>
+          </tr>
+            <tr>
+              <td id="pool_team_name">University of Miami</td>             <td id="pool_team_abbreviation">UMiami</td>
+              <td>2-2</td>
+              <td>290</td>
+              <td>220</td>
+              <td>70</td>
+              <td>25</td>
+              <td>3</td>
+        </tr>
+            <tr>
+            <td id="pool_team_name">Macaulay Honors College Marauders</td>
+            <td id="pool_team_abbreviation">MMarauders</td>             <td>2-2</td>
+            <td>250</td>
+            <td>290</td>
+            <td>-40</td>
+            <td>60</td>
+            <td>4</td>
+        </tr>
+            <tr>
+            <td id="pool_team_name">Eastern Michigan Flying Squirrels</td>
+            <td id="pool_team_abbreviation">EMU</td>
+            <td>0-4</td>
+            <td>110</td>
+            <td>510</td>
+            <td>-330</td>
+            <td>25</td>
+            <td>5</td>
+        </tr>
+            <tr>
+                <td id="pool_team_name">Crimson Warhawks</td>
+                <td id="pool_team_abbreviation">CW</td>
+                <td>1-3</td>
+                <td>260</td>
+                <td>390</td>
+                <td>-110</td>
+                <td>25</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td id="pool_team_name">University of South Carolina</td>
+                <td id="pool_team_abbreviation">SC</td>
+                <td>0-4</td>
+                <td>30</td>
+                <td>730</td>
+                <td>-480</td>
+                <td>0</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td id="pool_team_name">Bowling Green State University</td>
+                <td id="pool_team_abbreviation">BGSU</td>
+                <td>4-0</td>
+                <td>610</td>
+                <td>280</td>
+                <td>300</td>
+                <td>100</td>
+                <td>1</td>
+            </tr>
 
-
-
-
-
+     </tbody>
+</table>
+ </div>
+ <div class='tables col-xs-12 col-sm-12 col-md-6'>
+    <table class='table table-responsive table-striped table-hover table-bordered'>
+    <tbody>
+        <tr class="pool-name">
+            <th>Division 2</th>
+            <th>Nick Name</th>
+            <th>W-L</th>
+            <th>Pts For</th>
+            <th>Pts Agst</th>
+            <th>Adj Goal Diff</th>                       <th>Snatch %</th>
+            <th>Rank</th>
+        </tr>
+        <tr>
+            <td>Villanova Community Quidditch</td>
+            <td>VCQ</td>
+            <td>4-0</td>
+            <td>550</td>
+            <td>250</td>
+            <td>300</td>
+            <td>75</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Carleton University Quidditch</td>
+            <td>CUQ</td>
+            <td>3-1</td>
+            <td>320</td>
+            <td>260</td>
+            <td>60</td>
+            <td>75</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>New York University Nundu</td>
+            <td>NYU</td>
+            <td>2-2</td>
+            <td>260</td>
+            <td>320</td>
+            <td>-60</td>
+            <td>50</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Miami University Lionhawks</td>
+            <td>MUOH</td>
+            <td>1-3</td>
+            <td>310</td>
+            <td>350</td>
+            <td>-40</td>
+            <td>50</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Oklahoma Baptist University</td>
+            <td>OBU</td>
+            <td>0-4</td>
+            <td>200</td>
+            <td>460</td>
+            <td>-260</td>
+            <td>0</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Quidditch at the University of Virginia</td>
+            <td>UVA</td>
+            <td>2-2</td>
+            <td>220</td>
+            <td>280</td>
+            <td>-60</td>
+            <td>25</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Hofstra University Flying Dutchmen</td>
+            <td>HUQ</td>
+            <td>1-3</td>
+            <td>250</td>
+            <td>440</td>
+            <td>-190</td>
+            <td>25</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Cal Quidditch</td>
+            <td>Cal</td>
+            <td>0-4</td>
+            <td>180</td>
+            <td>550</td>
+            <td>-340</td>
+            <td>25</td>
+            <td>5</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+ <div class='tables col-xs-12 col-sm-12 col-md-12'>
+    <table class='table table-responsive table-hover table-striped'>
+        <tbody>
+            <tr class="pool-name">
+                <th>Division 3</th>
+                <th>Nick Name</th>
+                <th>W-L</th>
+                <th>Pts For</th>
+                <th>Pts Agst</th>
+                <th >Adj Goal Diff</th>                   <th>Snatch %</th>
+                <th>Rank</th>
+</tr>
+            <tr>
+                <td>Baylor University</td>                   <td >Baylor</td>                             <td>4-0</td>
+                <td>490</td>
+                <td>130</td>
+                <td>310</td>
+                <td>75</td>
+                <td>1</td>
+</tr>
+            <tr>
+                <td >University of California Los Angeles</td>
+                <td >UCLA</td>
+                <td>3-1</td>
+                <td>530</td>
+                <td>210</td>
+                <td>220</td>
+                <td>75</td>
+                <td>2</td>
+</tr>
+            <tr>
+                <td>Grand Valley Grindylows</td>
+                <td>GVG</td>
+                <td>2-2</td>
+                <td>340</td>
+                <td>480</td>
+                <td>-90</td>
+                <td>50</td>
+                <td>3</td>
+</tr>
+            <tr>
+                <td >Ottawa Maple Rush</td>                   <td>OMR</td>
+                <td>1-3</td>
+                <td>310</td>
+                <td>240</td>
+                <td>0</td>
+                <td>50</td>
+                <td>4</td>
+</tr>
+            <tr>
+                <td>University of Massachusetts Amherst</td>
+                <td>UMass</td>
+                <td>0-4</td>
+                <td>160</td>
+                <td>770</td>
+                <td>-440</td>
+                <td>0</td>
+                <td>5</td>
+</tr>
+            <tr>
+                <td>Lone Star Quidditch Club</td>
+                <td>LSQC</td>
+                <td>4-0</td>
+                <td>640</td>
+                <td>80</td>
+                <td>390</td>
+                <td>75</td>
+                <td>1</td>
+</tr>
+            <tr>
+                <td>RIT Dark Marks</td>
+                <td>RIT</td>
+                <td>3-1</td>
+                <td>380</td>
+                <td>150</td>
+                <td>200</td>
+                <td>75</td>
+                <td>2</td>
+</tr>
+            <tr>
+                <td>Appalachian Quidditch</td>
+                <td>App</td>
+                <td>2-2</td>
+                <td>370</td>
+                <td>330</td>
+                <td>0</td>
+                <td>75</td>
+                <td>3</td>
+</tr>
+        </tbody>
+</table>
+ </div>
+</div>
 
       <!-- Footer
     ================================================== -->
@@ -41,6 +322,8 @@
         <p ><span class='glyphicon glyphicon-copyright-mark'></span> Potters 2014</p>
       </div>
     </footer>
+
+</div>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
