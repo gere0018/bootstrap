@@ -1,70 +1,5 @@
-* h1 {
-  text-align: center;
-  font-family: 'Ruge Boogie', cursive;
-  font-size: 4.5rem; }
-* h2 {
-  font-weight: bold;
-  font-size: 2.3rem;
-  text-align: center;
-  color: #337ab7;
-  font-family: 'Rochester', cursive;
-  text-align: left; }
-* h3, * h4 {
-  font-family: 'Rochester', cursive; }
-* p {
-  font-family: 'Cookie', cursive;
-  font-size: 2rem; }
-
-#strong {
-  color: orange;
-  text-transform: capitalize; }
-
-.jumbotron {
-  background-color: #ffffcc;
-  padding: 0px;
-  margin: 0px; }
-  .jumbotron img {
-    padding: 0px; }
-
-.navbar .navbar-inner {
-  padding: 0px;
-  margin: 0px; }
-
-.navbar .nav {
-  margin: 0px;
-  display: table;
-  width: 100%; }
-
-body {
-  background-color: #c2e085; }
-
-.container {
-  background-color: #ffffcc; }
-
-.masthead {
-  background-color: #99cc33; }
-
 .navbar {
-  background-color: #e5e600; }
-
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: #c2e085; }
-
-footer {
-  background-color: #99cc33;
-  padding: 1rem;
-  clear: both; }
-
-footer p {
-  text-align: center;
-  font-family: 'Ruge Boogie', cursive;
-  font-size: 2.5rem;
-  padding-top: 0.5rem; }
-
-.navbar .nav li {
-  display: table-cell;
-  width: 25%;
-  float: none; }
+  background-color: #84af2c; }
 
 .navbar .nav li a {
   font-weight: bold;
@@ -83,14 +18,121 @@ footer p {
   border-right: 0;
   border-radius: 0 3px 3px 0; }
 
+.container-fluid {
+  padding: 0px; }
+
+#navbar {
+  padding: 0px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #ffffcc;
+  color: #337ab7; }
+
+.navbar .nav {
+  margin: 0px;
+  display: table;
+  width: 100%; }
+
+.navbar .nav li {
+  display: table-cell;
+  float: none; }
+
+body {
+  background-color: #c2e085; }
+
+.container {
+  padding: 2rem;
+  background-color: #ffffcc; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 60px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%; }
+
+footer {
+  background-color: #84af2c;
+  padding: 1rem;
+  clear: both; }
+
+footer p {
+  text-align: center;
+  font-family: 'Ruge Boogie', cursive;
+  font-size: 2.5rem;
+  padding-top: 0.5rem; }
+
+* h1 {
+  text-align: center;
+  font-family: 'Ruge Boogie', cursive;
+  font-size: 5rem;
+  color: #000; }
+* h2, * h4 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #337ab7;
+  font-family: 'Rochester', cursive; }
+* h3 {
+  font-family: 'Rochester', cursive;
+  color: #ffffcc; }
+* p {
+  font-family: 'Cookie', cursive;
+  font-size: 2rem; }
+* caption {
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #337ab7;
+  font-family: 'Rochester', cursive; }
+* th, * td {
+  font-family: 'Cookie', cursive;
+  font-size: 2rem; }
+
+#strong {
+  color: orange;
+  text-transform: capitalize; }
+
+.jumbotron {
+  min-height: 400px;
+  background: url(../images/quidditch-xs.jpg);
+  background-size: cover; }
+  @media screen and (min-width: 600px) {
+    .jumbotron {
+      background-image: url(../images/quidditch-small.jpg); } }
+  @media screen and (min-width: 992px) {
+    .jumbotron {
+      background-image: url(../images/quidditch-big.jpg);
+      min-height: 550px; } }
+
 .pool-name th {
-  background-color: #337ab7; }
+  background-color: #4f93ce; }
 
 .locations.row {
-  padding: inherit; }
+  padding: 1rem; }
+  .locations.row li {
+    background-color: #4f93ce;
+    list-style-type: none;
+    padding-bottom: 1rem;
+    margin: 0px; }
 
-.locations.row li {
-  background-color: #337ab7;
-  list-style-type: none; }
+legend {
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #337ab7;
+  font-family: 'Rochester', cursive;
+  text-align: left; }
+
+#submit {
+  margin-top: 10%;
+  margin-left: 2rem;
+  width: 20%; }
 
 /*# sourceMappingURL=style.css.map */

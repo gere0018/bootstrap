@@ -2,70 +2,58 @@
 @import "variables";
 @import "mixins";
 
-//Fonts
-*{
-    h1{
-    @include font-title;
+//Navbar--------------------------------------
+//tabs style in navbar.......................
+.navbar{
+    background-color: $tab;
+}
+.navbar .nav li a {
+    @include font-nav;
+    border-left: 1px solid rgba(255,255,255,.75);
+    border-right: 1px solid rgba(0,0,0,.1);
   }
-    h2{
-     @include font-nav;
-     text-align:left;
-    }
-    h3,h4{
-    @include font-subtitle;
-    }
-    p{
-     @include font-text;
-    }
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
 }
-#strong{
-    color:orange;
-    text-transform: capitalize;
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
 }
-
-
-.jumbotron{
-  background-color: $container;
-  padding: 0px;
-  margin: 0px;
-
- img{
-  padding: 0px;
- }
-}
-
-
-
-.navbar .navbar-inner {
+//active tab full.............................
+.container-fluid{
     padding: 0px;
+}
+#navbar{
+    padding: 0px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background-color: $container;
+    color: $blue;
+}
+//tabs full width.......................................
+.navbar .nav {
     margin: 0px;
+    display: table;
+    width: 100%;
       }
-      .navbar .nav {
-        margin: 0px;
-        display: table;
-        width: 100%;
+.navbar .nav li {
+    display: table-cell;
+    float: none;
       }
+
+//--------------------------------------------
+//Main Pages Layout---------------------------------
 body{
 background-color:$bodyColor;
 }
 .container{
+padding: 2rem;
 background-color: $container;
-//   @media (min-width: 1200px) {
-//        width:1390px;
-//    }
 }
-.masthead{
-    background-color: $nav;
-      }
-.navbar{
+@include sticky-footer;
+footer{
     background-color: $tab;
-}
-.nav>li>a:hover, .nav>li>a:focus{
-  background-color: $bodyColor;
-}
-
- footer{
-    background-color: $nav;
     padding: 1rem;
      clear:both;
  }
@@ -73,39 +61,72 @@ footer p{
     @include font-footer;
      padding-top: 0.5rem;
 }
-      .navbar .nav li {
-        display: table-cell;
-        width: 25%;
-        float: none;
-      }
-      .navbar .nav li a {
+//Fonts......................................
+*{
+    h1{
+    @include font-title;
+  }
+    h2, h4{
+     @include font-nav;
+
+    }
+    h3{
+    @include font-subtitle;
+    }
+    p{
+     @include font-text;
+    }
+    caption{
         @include font-nav;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
+    }
+    th, td{
+        @include font-text;
+    }
+}
+#strong{
+    color:orange;
+    text-transform: capitalize;
+}
+//-------------------------------------------
+//Home Page---------------------------------------------
+//jumbotron...................................
+.jumbotron{
+min-height: 400px;
+background: url(../images/quidditch-xs.jpg);
+background-size: cover;
+  @media screen and (min-width:600px){
+      background-image:url(../images/quidditch-small.jpg);
+  }
+  @media screen and (min-width:992px){
+      background-image:url(../images/quidditch-big.jpg);
+      min-height: 550px;
+   }
 
-// <!-- standings
-//  ================================================== -->
-//tables
+}
+//standings-----------------------------------
+//tables.....................................
 .pool-name th{
-    background-color: $blue;
+    background-color: $lightBlue;
 }
-// <!-- Locations
-//  ================================================== -->
-//ul
+// Locations---------------------------------
+//ul........................................
 .locations.row{
-    padding: inherit;
-}
-.locations.row li{
-    background-color: $blue;
+    padding: 1rem;
+   li{
+    background-color: $lightBlue;
     list-style-type: none;
-
+    padding-bottom: 1rem;
+    margin: 0px;
+    }
 }
+
+//SignUp----------------------------------------
+    legend{
+        @include font-nav;
+        text-align: left;
+    }
+    #submit{
+        margin-top:10%;
+        margin-left: 2rem;
+        width:20%;
+    }

@@ -1,5 +1,8 @@
-$nav:#99cc33;
-$container:#ffffcc;
-$tab:darken($container, 45%);;
-$bodyColor: lighten($nav, 20%);
+$green:#99cc33;
 $blue: #337ab7;
+$red:#900000;
+$container:#ffffcc;
+$tab:darken($green, 7%);;
+$bodyColor: lighten($green, 20%);
+$lightBlue:lighten($blue, 10%);
+

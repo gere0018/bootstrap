@@ -1,7 +1,10 @@
+
+//Fonts Mixins--------------------------------
 @mixin font-title{
       text-align: center;
       font-family: 'Ruge Boogie', cursive;
-      font-size: 4.5rem;
+      font-size: 5rem;
+      color:#000;
     }
  @mixin font-text{
      font-family: 'Cookie', cursive;
@@ -15,6 +18,7 @@
 
  @mixin font-subtitle{
     font-family: 'Rochester', cursive;
+     color:$container;
 }
 @mixin font-nav{
     font-weight: bold;
@@ -24,11 +28,22 @@
     font-family: 'Rochester', cursive;
 }
 
- @mixin images{
-    @media screen and (min-width:970px) {
-     img[data-src-970px] {
-     content: attr(data-src-970px, 'images/quidditch-pitch.jpg');
+// Stciky footer Mixin------------------------
+@mixin sticky-footer{
+    html{
+        position: relative;
+        min-height: 100%;
+    }
+    body {
+        margin-bottom: 60px;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        width:100%;
       }
 
-      }
- }
+   }
+

@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link href='http://fonts.googleapis.com/css?family=Ruge+Boogie|Cookie|Rochester' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/respond.min.js"></script>
 
 </head>
 
 <body>
-  <div class='container'>
+
      <!-- Navbar
     ================================================== -->
 <div class= "masthead">
-      <h1>The Potters</h1>
       <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
        <div class="navbar-header">
@@ -38,87 +37,78 @@
       </div>
     </div>
 </nav>
+    <h1>The Potters Quidditch League</h1>
 </div>
-
+<div class='container'>
       <!--
      sign up form
     ==================================================
---><section>
+-->
       <div>
-          <h3>Join our team and explore the thrill of flying a broomstick</h3>
+          <h2>Join our team and explore the thrill of flying a broomstick</h2>
           <p>To be part of our team there is a cost of 5 million dollars per season. Be one of the privileged few and get transformed into a "Potter". Fill your information below and <strong id='strong'>join us now</strong>.</p>
       </div>
 
-<form role="form">
- <div class='row col-xs-12 col-md-6 col-lg-4'>
-  <div class="form-group">
-    <label for=name>Name</label>
-    <input class="form-control" id=name name=name type=text placeholder="First and last name" required autofocus />
-  </div>
-  <div class="form-group">
-    <label for=email>Email</label>
-    <input class="form-control" id=email name=email type=email placeholder="example@domain.com" required />
-  </div>
-  <div class="form-group">
-    <label for=phone>Phone</label>
-    <input class="form-control" id=phone name=phone type=tel  required />
-  </div>
-</div>
-<div class='row col-xs-12 col-md-6 col-lg-4'>
-  <div class="form-group">
-    <label for=address>Street Address</label>
-    <input  class="form-control" id=address name=address type=text required />
-  </div>
-  <div class="form-group">
-    <label for=city>City</label>
-    <input class="form-control" id=city name=city type=text required />
-  </div>
-  <div class="form-group">
-    <label for=postcode>Postal Code</label>
-    <input class="form-control" id=postcode name=postcode type=text required />
-  </div>
-</div>
-<div class='row col-xs-12  col-md-6 col-lg-4'>
-  <div class="form-group">
-    <label for="card-type">Card Type</label>
-    <select class="form-control" name="card-type" id="card-type">
-                <option value="1">Visa</option>
-                <option value="2">AmEx</option>
-                <option value="3">Mastercard</option>
-            </select>
-  </div>
-  <div class="form-group">
-    <label for=cardnumber>Card Number</label>
-    <input class="form-control" id=cardnumber name=cardnumber type=password required />
-  </div>
-  <div class="form-group">
-    <label for=secure>Security Code</label>
-    <input class="form-control" id=secure name=secure type=password required />
-  </div>
-  <div class="form-group">
-    <label for=namecard>Name on Card</label>
-    <input class="form-control" id=namecard name=namecard type=text  required />
-  </div>
-  <div class="form-group">
-</div>
-    <button type="submit" class="btn btn-primary">submit</button>
- </div>
+<form class='row' role="form">
+   <fieldset class='col-xs-12 col-md-6'>
+        <legend>Team info</legend>
+          <div class="form-group">
+            <label for=name>Name</label>
+            <input class="form-control" id=name name=name type=text placeholder="First and last name" required autofocus />
+           </div>
+          <div class="form-group">
+            <label for=address>Street Address</label>
+            <input  class="form-control" id=address name=address type=text required />
+          </div>
+          <div class="form-group">
+            <label for=city>City</label>
+            <input class="form-control" id=city name=city type=text required />
+          </div>
+          <div class="form-group">
+            <label for=postcode>Postal Code</label>
+            <input class="form-control" id=postcode name=postcode type=text required />
+          </div>
+    </fieldset>
+   <fieldset class='col-xs-12 col-md-6'>
+        <legend>Payment Details</legend>
+          <div class="form-group">
+            <label for="card-type">Card Type</label>
+            <select class="form-control" name="card-type" id="card-type">
+                        <option value="1">Visa</option>
+                        <option value="2">AmEx</option>
+                        <option value="3">Mastercard</option>
+                    </select>
+          </div>
+          <div class="form-group">
+            <label for=cardnumber>Card Number</label>
+            <input class="form-control" id=cardnumber name=cardnumber type=password required />
+          </div>
+          <div class="form-group">
+            <label for=secure>Security Code</label>
+            <input class="form-control" id=secure name=secure type=password required />
+          </div>
+          <div class="form-group">
+            <label for=namecard>Name on Card</label>
+            <input class="form-control" id=namecard name=namecard type=text  required />
+          </div>
+    </fieldset>
+    <div>
+ <button id= 'submit' type="submit" class="btn btn-primary">submit</button>
+      </div>
 </form>
-</section>
-
-
-
-
-
+</div>
 
       <!-- Footer
     ================================================== -->
-     <footer class="footer">
+    <div>
+    <footer class="footer">
       <div>
         <p ><span class='glyphicon glyphicon-copyright-mark'></span> Potters 2014</p>
       </div>
     </footer>
+    </div>
+
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
