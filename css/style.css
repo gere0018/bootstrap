@@ -114,6 +114,9 @@ footer p {
 .pool-name th {
   background-color: #4f93ce; }
 
+.visible-xs td {
+  background-color: #4f93ce !important; }
+
 .locations.row {
   padding: 1rem; }
   .locations.row li {

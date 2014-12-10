@@ -108,6 +108,9 @@ background-size: cover;
 .pool-name th{
     background-color: $lightBlue;
 }
+.visible-xs td{
+     background-color: $lightBlue!important;
+}
 // Locations---------------------------------
 //ul........................................
 .locations.row{
