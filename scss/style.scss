@@ -7,6 +7,15 @@
 .navbar{
     background-color: $tab;
 }
+.navbar .nav li{
+    display:block!important;
+    @media screen and (min-width:600px){
+        display: table-cell!important;
+    }
+ }
+.navbar-collapse{
+    padding-left: 0px;
+}
 .navbar .nav li a {
     @include font-nav;
     border-left: 1px solid rgba(255,255,255,.75);
@@ -111,8 +120,8 @@ background-size: cover;
 .visible-xs td{
      background-color: $lightBlue!important;
 }
-.table{
-    overflow: scroll;
+.table-container{
+    overflow-x: auto;
 }
 // Locations---------------------------------
 //ul........................................

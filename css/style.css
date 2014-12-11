@@ -1,5 +1,14 @@
 .navbar {
-  background-color: #84af2c; }
+  background-color: #90c030; }
+
+.navbar .nav li {
+  display: block !important; }
+  @media screen and (min-width: 600px) {
+    .navbar .nav li {
+      display: table-cell !important; } }
+
+.navbar-collapse {
+  padding-left: 0px; }
 
 .navbar .nav li a {
   font-weight: bold;
@@ -58,7 +67,7 @@ body {
   width: 100%; }
 
 footer {
-  background-color: #84af2c;
+  background-color: #90c030;
   padding: 1rem;
   clear: both; }
 
@@ -116,6 +125,9 @@ footer p {
 
 .visible-xs td {
   background-color: #4f93ce !important; }
+
+.table-container {
+  overflow-x: auto; }
 
 .locations.row {
   padding: 1rem; }
