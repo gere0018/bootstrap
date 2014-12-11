@@ -111,6 +111,9 @@ background-size: cover;
 .visible-xs td{
      background-color: $lightBlue!important;
 }
+.table{
+    overflow: scroll;
+}
 // Locations---------------------------------
 //ul........................................
 .locations.row{
